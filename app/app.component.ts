@@ -6,11 +6,14 @@ import { TabsPage } from '../pages/tabs/tabs';
 //Rebcca Interação
 import {Login} from '../pages/login/login';
 
+//home ccomo principal 
+import {HomePage} from '../pages/home/home'
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = Login;
+  rootPage:any = HomePage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
